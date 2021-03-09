@@ -1,0 +1,11 @@
+.cover-container {
+    max-width: 42em;
+    height: 82vh;
+    background-color: hsla(204, 15%, 87%, 0.3);
+}
+
+.cover {
+    padding: 0 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}

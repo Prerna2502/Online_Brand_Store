@@ -1,0 +1,14 @@
+.formForregister {
+    width: fit-content;
+    height: 140vh;
+    align-items: center;
+}
+
+.registerForm {
+    height: 150vh;
+}
+a {
+    text-decoration: none !important;
+    color:black;
+
+}

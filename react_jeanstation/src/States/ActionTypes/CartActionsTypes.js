@@ -1,0 +1,5 @@
+export const AddItemToCart = 'AddItemToCart'
+export const DeleteItemToCart = 'DeleteItemToCart'
+export const IncrementCartItem = 'IncrementCartItem'
+export const DecrementCartItem = 'DecrementCartItem'
+export const EmptyCart = 'EmptyCart'

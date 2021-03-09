@@ -1,0 +1,14 @@
+.formForLogIn {
+    width: fit-content;
+    height: 82vh;
+    align-items: center;
+}
+
+.loginForm {
+    height: 82vh;
+}
+a {
+    text-decoration: none !important;
+    color:black;
+
+}

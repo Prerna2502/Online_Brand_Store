@@ -1,0 +1,17 @@
+.cardProduct img{
+    padding-left: 0;
+}
+.cardProduct{
+    padding: 0;
+    
+}
+.cardMain{
+    background-color: #f5ebdf ;
+}
+.CardLink{
+    text-decoration: none;
+}
+
+.CardLink:hover{
+    text-decoration: none;
+}

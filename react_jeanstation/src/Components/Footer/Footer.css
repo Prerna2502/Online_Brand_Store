@@ -1,0 +1,9 @@
+.main_footer {
+    background-color: #f5ebdf;
+    text-align: center;
+    color: black;
+    position: absolute;
+    width: 100%;
+    padding: 10pt 0pt;
+    bottom: 0;
+}

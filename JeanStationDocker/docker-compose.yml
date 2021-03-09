@@ -1,0 +1,82 @@
+version: '3.4'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+    depends_on:
+      - mongo
+
+  authapi:
+    image: ${DOCKER_REGISTRY-}authapi
+    build:
+      context: .
+      dockerfile: Auth API/Dockerfile
+    ports:
+      - "8082:81"
+    environment:
+      MongoDB__Host: mongo
+    depends_on:
+      - mongo
+
+  gateway:
+    image: ${DOCKER_REGISTRY-}gateway
+    build:
+      context: .
+      dockerfile: Gateway/Dockerfile
+    ports:
+        - "8088:80"
+
+
+  orderdiscountapi:
+    image: ${DOCKER_REGISTRY-}orderdiscountapi
+    build:
+      context: .
+      dockerfile: OrderDiscountApi/Dockerfile
+    ports:
+        - "8083:80"
+    depends_on:
+        - db
+
+
+  productstorestockapi:
+    image: ${DOCKER_REGISTRY-}productstorestockapi
+    build:
+      context: .
+      dockerfile: ProductStoreStockApi/Dockerfile
+    ports:
+        - "8084:80"
+    depends_on:
+        - db
+
+
+  userserviceapi:
+    image: ${DOCKER_REGISTRY-}userserviceapi
+    build:
+      context: .
+      dockerfile: UserServiceAPI/Dockerfile
+    ports:
+        - "8085:80"
+    depends_on:
+        - db
+

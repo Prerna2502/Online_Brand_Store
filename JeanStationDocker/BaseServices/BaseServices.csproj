@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseException\BaseExceptions.csproj" />
+    <ProjectReference Include="..\BaseInterfaces\BaseInterfaces.csproj" />
+    <ProjectReference Include="..\BaseModels\BaseModels.csproj" />
+    <ProjectReference Include="..\BaseRepository\BaseRepository.csproj" />
+  </ItemGroup>
+
+</Project>

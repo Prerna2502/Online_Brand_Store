@@ -1,0 +1,15 @@
+.stock-table{
+    max-width: 70vw;
+    margin:auto;
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
+.scroll-me{
+    overflow-x: auto;
+    overflow-y: auto;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.stock-container{
+    min-height: 78vh;
+}

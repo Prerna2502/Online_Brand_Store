@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserException\UserException.csproj" />
+    <ProjectReference Include="..\UserInterface\UserInterface.csproj" />
+    <ProjectReference Include="..\UserModels\UserModels.csproj" />
+    <ProjectReference Include="..\UserRepository\UserRepository.csproj" />
+  </ItemGroup>
+
+</Project>

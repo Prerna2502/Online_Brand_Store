@@ -1,0 +1,16 @@
+.employeefooter {
+    margin:auto;
+}
+
+.employeefooter-container {
+    margin-bottom: 0;
+    padding: 0;
+    bottom: 0%;
+    min-width: 100vw;
+}
+
+.employeefooter-nav {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}

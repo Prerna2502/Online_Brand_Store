@@ -1,0 +1,16 @@
+
+.cointainerCateogory{
+    margin-left: 0;
+}
+
+.HeroSection{
+    background-color: #f5ebdf ;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.HeroSection img{
+    height: 400px;
+    width: 400px;
+    margin: 10px 40px ;
+}

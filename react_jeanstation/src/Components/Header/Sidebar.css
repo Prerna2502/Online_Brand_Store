@@ -1,0 +1,24 @@
+.sidebar_main{
+    position: absolute;
+    left: 0px;
+    /* height: 90vh; */
+    top: 50px;
+    background-color:#f5ebdf;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.sidebar_main > div a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.sidebar_item{
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.sidebar_item:hover{
+    background-color: salmon;
+}
